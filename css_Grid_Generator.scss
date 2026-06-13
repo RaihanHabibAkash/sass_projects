@@ -1,0 +1,15 @@
+// _grid.scss
+
+$columns: 12;
+
+.row {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: 20px;
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    grid-column: span $i;
+  }
+}

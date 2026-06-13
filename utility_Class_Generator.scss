@@ -1,0 +1,28 @@
+// _utilities.scss
+
+$spaces: (
+  1: 4px,
+  2: 8px,
+  3: 12px,
+  4: 16px,
+  5: 20px
+);
+
+@each $key, $value in $spaces {
+
+  .m-#{$key} {
+    margin: $value;
+  }
+
+  .p-#{$key} {
+    padding: $value;
+  }
+
+  .mt-#{$key} {
+    margin-top: $value;
+  }
+
+  .pt-#{$key} {
+    padding-top: $value;
+  }
+}

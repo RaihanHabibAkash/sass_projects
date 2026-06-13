@@ -1,0 +1,31 @@
+// _buttons.scss
+
+$primary: #2563eb;
+$success: #16a34a;
+$danger: #dc2626;
+
+@mixin button($bg) {
+  background: $bg;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.btn-primary {
+  @include button($primary);
+}
+
+.btn-success {
+  @include button($success);
+}
+
+.btn-danger {
+  @include button($danger);
+}

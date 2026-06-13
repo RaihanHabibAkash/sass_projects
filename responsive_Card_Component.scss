@@ -1,0 +1,23 @@
+// _card.scss
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,.08);
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  &__text {
+    color: #666;
+    margin-top: 10px;
+  }
+}
